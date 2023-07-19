@@ -1,0 +1,42 @@
+@charset "ISO-8859-1";
+
+.myTables td {
+	border: solid 1px black;
+	padding-right: 5px;
+	padding-left: 5px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+.myTables {
+	border-collapse: collapse;
+}
+
+.myTables thead {
+	font-weight: bold;
+}
+
+#container-table {
+	display: table;
+	border-spacing: 5px;
+}
+
+#container-table div {
+	display: table-row;
+}
+
+#container-table label {
+	display: table-cell;
+	text-align: right;
+	font-weight: bold;
+}
+
+#container-buttons {
+	display: table;
+	margin-left: 42px;
+}
+
+#container-buttons input{
+	margin: 2px;
+}
+

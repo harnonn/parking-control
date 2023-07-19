@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Parking Spot Control</title>
+	<script type="text/javascript" src="main.js" defer></script>
+	<link rel="stylesheet" href="myStyle.css">
+	<style type="text/css">
+		
+	</style>
+</head>
+<body>
+	<h1>Parking Spot Control</h1>
+	<table id="table-spots" class="myTables"  >
+		<thead>
+			<tr>
+				<td>SPOT</td>
+				<td>PLATE</td>
+				<td>BRAND</td>
+				<td>MODEL</td>
+				<td>COLOR</td>
+				<td>REGISTRATION DATE</td>
+				<td>RESPONSIBLE</td>
+				<td>APPARTMENT</td>
+				<td>BLOCK</td>
+				<td>...</td>
+			</tr>
+		</thead>
+		<tbody/>
+	</table>
+	<br/></br>
+	<form id="form-spots" onsubmit="saveSpot()">
+		<div id="container-table">
+			<div>
+				<label>Id </label>
+				<input id="input-id" readonly="readonly">
+			</div>
+			<div>
+				<label>Spot </label>
+				<input id="input-spot" >
+			</div>
+			<div>
+				<label>Plate </label>
+				<input id="input-plate">
+			</div>	
+			<div>
+				<label>Brand </label>
+				<input id="input-brand">
+			</div>
+				<label>Model </label>
+				<input id="input-model">
+			<div>
+				<label>Color </label>
+				<input id="input-color">
+			</div>	
+			<div>
+				<label>Responsible </label>
+				<input id="input-responsible">
+			</div>	
+			<div>
+				<label>Appartment </label>
+				<input id="input-appartment">
+			</div>
+			<div>
+				<label>Block </label>
+				<input id="input-block">
+			</div>
+		</div>
+		<div id="container-buttons">
+			<input type="submit" value="Save"/>
+			<input type="reset" value="Clear"/>
+			<input type="button" value="Reload Table" onclick="loadSpots()"/>
+		</div>
+	</form>
+</body>
+</html>
